@@ -1,0 +1,12 @@
+### login
+POST http://127.0.0.1:8000/api/v1/auth/login
+Accept: application/json 
+Content-Type: application/json
+
+{
+    "email": "pedro@mail.com",
+    "password": "pedro123"
+}
+### registro
+### perfil
+### logout
