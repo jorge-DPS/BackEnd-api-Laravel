@@ -9,4 +9,12 @@ Content-Type: application/json
 }
 ### registro
 ### perfil
+
+GET http://127.0.0.1:8000/api/v1/auth/perfil
+Accept: application/json
+Authorization: Bearer 4|8aPSSZKT7OL3smY4eJVBjf3RiGzuePWEqubyzWqa
+
 ### logout
+POST http://127.0.0.1:8000/api/v1/auth/logout
+Accept: application/json
+Authorization: Bearer 4|8aPSSZKT7OL3smY4eJVBjf3RiGzuePWEqubyzWqa

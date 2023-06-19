@@ -26,6 +26,7 @@ class AuthController extends Controller
         // generar tokken
 
         $user = Auth::user(); // -> captura al usuario actual
+
         $tokenResult = $user->createToken("Token Auth"); //-> asignar un nombre para la autenticacion, aqui se genera el token
         $token = $tokenResult->plainTextToken;
 
@@ -64,6 +65,8 @@ class AuthController extends Controller
         // return Auth::user();
         // capturar los datos del usuario actual
         $usuarioCapturado = Auth::user();
+        $usuarioCapturado->ip = $ip = \Request::ip();
+
         return response()->json($usuarioCapturado, 200); //usario capturado si esta autenticado
 
     }
